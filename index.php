@@ -50,7 +50,7 @@
 </head>
 <body>
 	<div class="container">
-		<form action="s_login.php" method="post" id="login-form" autocomplete="off">
+		<form action="s_login_inputParam.php" method="post" id="login-form" autocomplete="off">
 			<h2>Login Form</h2>
 			<label for="username">Username:</label>
 			<input type="text" id="username" name="username" required>
