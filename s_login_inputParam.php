@@ -7,11 +7,7 @@
     } 
 
     if($_SERVER["REQUEST_METHOD"] == "POST") {
-        // username and password sent from form 
 
-        // $username = mysqli_real_escape_string($db,$_POST['username']);
-        // $password = mysqli_real_escape_string($db,$_POST['password']); 
-        
         // Input categorization
         $username = $_POST['username'];
         $password = $_POST['password']; 
@@ -21,7 +17,7 @@
         $alphabets = array_merge($alphabets, range('A', 'Z'));
         $numbers = range(0, 9);
         
-        // Check if input is safe using input verifier
+        //input verifier
         $isSafe = true;
         $inputSet = array(str_split($username), str_split($password));
         foreach ($inputSet as $input) {

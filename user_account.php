@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <?php include("session.php");?>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Welcome</title>
-    </head>
-    <style>
-        
-    </style>
-    <body>
+<head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #logout-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #logout-btn img {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+  }
+  
+   .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }       
+</style>
+</head>
+<body>
         <navbar>
-            <a id="home-btn" href="index.php" alt="home">
-                <div class="bg_slider_r"></div>
-                <img src="images/home.png" alt="">
-            </a>
-            <a id="logout-btn" href = "logout.php" alt="Log Out">
-                <div class="bg_slider_l"></div>
-                <img src="images/logout.png" alt="">
+            <a id="logout-btn" href = "logout.jpg" alt="Log Out">
+                <img src="images/logout.jpg" alt="">
             </a>
         </navbar>
         <div class="wrapper">
-            <h1 style="margin-top: 80px;">Hello <?php echo $login_session_uname; ?>, welcome to your account.</h1>
+            <h2 style="margin-top: 80px;">Hello <?php echo $login_session_uname; ?>, welcome to your bank account.</h2>
             <br>
         </div>
-    </body>
+</body>
 </html>
