@@ -22,9 +22,11 @@ After db and server is up and running, you can check the different implementatio
 3. index2.php: for aho corasick pattern match algo
 
 Contributions:
-
 1. Monica Meduri: Setting up the dev environment, creating login pages, implementing the input categorization method.
 2. Samyak Kumbhalwar: Setting up database, Implementing the Aho Corasick method, benchmarking, testing the application.
+
+Benchmarking:
+The script testDataSet.php is used for testing where we ran the Aho Corasick method against publicly available dataset from kaggle ( in file SQL_Injection_Dataset.csv) and collected our results.
 
 References:
 We used library for Aho Corasick impl: https://github.com/wikimedia/AhoCorasick
