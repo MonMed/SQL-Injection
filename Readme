@@ -1,0 +1,30 @@
+Setting up web server:
+The web application can be run on any php web server, we recommend XAMPP.
+The project folder should be put inside htdocs folder.
+
+Setting up database:
+The project needs mysql db. Following queries can help you set up the minimal db required.
+
+-- Create users Table
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20),
+  `password` varchar(255),
+  `firstname` varchar(30) default NULL,
+  `lastname` varchar(30) default NULL,
+  `created_at` datetime DEFAULT current_timestamp(),
+) 
+
+Running the application:
+After db and server is up and running, you can check the different implementation as follows:
+1. index.php : for sql vulnerable queries
+2. index1.php: for input cat and verifier method
+3. index2.php: for aho corasick pattern match algo
+
+Contributions:
+
+1. Monica Meduri: Setting up the dev environment, creating login pages, implementing the input categorization method.
+2. Samyak Kumbhalwar: Setting up database, Implementing the Aho Corasick method, benchmarking, testing the application.
+
+References:
+We used library for Aho Corasick impl: https://github.com/wikimedia/AhoCorasick
